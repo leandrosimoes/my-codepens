@@ -30,7 +30,7 @@ $animation-name: 'pumbSound';
         @for $i from 1 through 9 {
             &.level#{$i}:after {
                 height: random(50) + px;
-                animation: #{$animation-name+$i} random(1000) + ms linear infinite alternate;
+                animation: #{$animation-name+$i} random(1000) + 300 + ms linear infinite alternate;
             }
         }
     }
