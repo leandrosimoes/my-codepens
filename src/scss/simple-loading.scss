@@ -1,0 +1,81 @@
+  @import 'mixins.scss';
+  
+  $animation-name: 'jump';
+  
+  #simple-loading {
+    width: 71px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .circle {
+      width: 15px;
+      height: 15px;
+      background-color: #FFF;
+      border-radius: 50%;
+      margin-left: 3px;
+      margin-right: 3px;
+      display: inline-block;
+      position: relative;
+      animation-name: jump;    
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(1,.03,0,.99);
+    }
+
+    .circle1 {
+      animation-delay: 0;
+    }
+
+    .circle2 {
+      animation-delay: .1s;
+    }
+
+    .circle3 {
+      animation-delay: .2s;
+    }
+}
+
+@include keyframes(#{$animation-name}) {
+    0% {
+        top: -25px;
+        opacity: 1;
+    }
+
+    10% {
+        opacity: .4;
+    }
+
+    25% {
+        top: 25px;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        top: -25px;
+    }
+
+    65% {
+        opacity: .4;
+    }
+
+    75% {
+        top: 25px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: -25px;
+        opacity: 1;
+    }
+}

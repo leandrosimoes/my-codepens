@@ -1,0 +1,57 @@
+@import "mixins.scss";
+
+$level-background-color: #FFF;
+$animation-name: 'pumbSound';
+
+#levels {
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    position: relative;
+
+    .level {
+        width: 3px;
+        height: 50px;
+        margin-left: 1px;
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $level-background-color;
+            width: 3px;                
+        }
+
+        @for $i from 1 through 9 {
+            &.level#{$i}:after {
+                height: random(50) + px;
+                animation: #{$animation-name+$i} random(1000) + ms linear infinite alternate;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 9 {
+    @include keyframes(#{$animation-name+$i}) {
+        20% {
+
+        }
+        40% {
+            height: random(50) + px;
+        }
+        60% {
+            height: random(50) + px;
+        }
+        80% {
+            height: random(50) + px;
+        }
+        100% {
+            height: random(50) + px;
+        }
+    }
+}
