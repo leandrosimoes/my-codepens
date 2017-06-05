@@ -23,11 +23,11 @@
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(1, 0.03, 0, 0.99); }
   #simple-loading .circle1 {
-    animation-delay: 0; }
+    animation-delay: 0s; }
   #simple-loading .circle2 {
-    animation-delay: .1s; }
+    animation-delay: 0.1s; }
   #simple-loading .circle3 {
-    animation-delay: .2s; }
+    animation-delay: 0.2s; }
 
 @-webkit-keyframes jump {
   0% {
@@ -120,10 +120,10 @@
 #levels {
   width: 100px;
   height: 50px;
-  top: 50%;
-  transform: translateY(-50%);
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
   #levels .level {
     width: 3px;
     height: 50px;
@@ -138,428 +138,428 @@
       background: #FFF;
       width: 3px; }
     #levels .level.level1:after {
-      height: 35px;
-      animation: pumbSound1 722ms linear infinite alternate; }
+      height: 47px;
+      animation: pumbSound1 538ms linear infinite alternate; }
     #levels .level.level2:after {
-      height: 38px;
-      animation: pumbSound2 318ms linear infinite alternate; }
+      height: 41px;
+      animation: pumbSound2 598ms linear infinite alternate; }
     #levels .level.level3:after {
-      height: 16px;
-      animation: pumbSound3 724ms linear infinite alternate; }
+      height: 26px;
+      animation: pumbSound3 551ms linear infinite alternate; }
     #levels .level.level4:after {
-      height: 10px;
-      animation: pumbSound4 882ms linear infinite alternate; }
+      height: 11px;
+      animation: pumbSound4 284ms linear infinite alternate; }
     #levels .level.level5:after {
-      height: 24px;
-      animation: pumbSound5 44ms linear infinite alternate; }
+      height: 33px;
+      animation: pumbSound5 258ms linear infinite alternate; }
     #levels .level.level6:after {
-      height: 47px;
-      animation: pumbSound6 379ms linear infinite alternate; }
+      height: 12px;
+      animation: pumbSound6 919ms linear infinite alternate; }
     #levels .level.level7:after {
-      height: 21px;
-      animation: pumbSound7 74ms linear infinite alternate; }
+      height: 46px;
+      animation: pumbSound7 815ms linear infinite alternate; }
     #levels .level.level8:after {
-      height: 47px;
-      animation: pumbSound8 385ms linear infinite alternate; }
-    #levels .level.level9:after {
       height: 21px;
-      animation: pumbSound9 955ms linear infinite alternate; }
+      animation: pumbSound8 755ms linear infinite alternate; }
+    #levels .level.level9:after {
+      height: 40px;
+      animation: pumbSound9 336ms linear infinite alternate; }
 
 @-webkit-keyframes pumbSound1 {
   20% { }
   40% {
-    height: 4px; }
+    height: 48px; }
   60% {
-    height: 15px; }
+    height: 5px; }
   80% {
-    height: 21px; }
+    height: 28px; }
   100% {
-    height: 43px; } }
+    height: 26px; } }
 
 @-moz-keyframes pumbSound1 {
   20% { }
   40% {
-    height: 12px; }
+    height: 50px; }
   60% {
-    height: 12px; }
+    height: 44px; }
   80% {
-    height: 42px; }
+    height: 27px; }
   100% {
-    height: 26px; } }
+    height: 6px; } }
 
 @-o-keyframes pumbSound1 {
   20% { }
   40% {
-    height: 34px; }
+    height: 31px; }
   60% {
-    height: 30px; }
+    height: 2px; }
   80% {
-    height: 11px; }
+    height: 6px; }
   100% {
-    height: 37px; } }
+    height: 47px; } }
 
 @keyframes pumbSound1 {
   20% { }
   40% {
-    height: 21px; }
+    height: 48px; }
   60% {
-    height: 22px; }
+    height: 26px; }
   80% {
-    height: 1px; }
+    height: 22px; }
   100% {
-    height: 35px; } }
+    height: 6px; } }
 
 @-webkit-keyframes pumbSound2 {
   20% { }
   40% {
-    height: 36px; }
+    height: 34px; }
   60% {
-    height: 44px; }
+    height: 16px; }
   80% {
-    height: 45px; }
+    height: 8px; }
   100% {
-    height: 42px; } }
+    height: 30px; } }
 
 @-moz-keyframes pumbSound2 {
   20% { }
   40% {
-    height: 15px; }
+    height: 31px; }
   60% {
-    height: 16px; }
+    height: 20px; }
   80% {
-    height: 23px; }
+    height: 7px; }
   100% {
-    height: 30px; } }
+    height: 28px; } }
 
 @-o-keyframes pumbSound2 {
   20% { }
   40% {
-    height: 6px; }
+    height: 42px; }
   60% {
-    height: 13px; }
+    height: 6px; }
   80% {
-    height: 23px; }
+    height: 14px; }
   100% {
-    height: 40px; } }
+    height: 46px; } }
 
 @keyframes pumbSound2 {
   20% { }
   40% {
-    height: 15px; }
+    height: 42px; }
   60% {
-    height: 16px; }
+    height: 32px; }
   80% {
-    height: 46px; }
+    height: 12px; }
   100% {
-    height: 35px; } }
+    height: 19px; } }
 
 @-webkit-keyframes pumbSound3 {
   20% { }
   40% {
-    height: 50px; }
+    height: 34px; }
   60% {
-    height: 17px; }
+    height: 11px; }
   80% {
-    height: 8px; }
+    height: 21px; }
   100% {
-    height: 25px; } }
+    height: 22px; } }
 
 @-moz-keyframes pumbSound3 {
   20% { }
   40% {
-    height: 8px; }
+    height: 12px; }
   60% {
-    height: 1px; }
+    height: 35px; }
   80% {
-    height: 47px; }
+    height: 15px; }
   100% {
-    height: 14px; } }
+    height: 3px; } }
 
 @-o-keyframes pumbSound3 {
   20% { }
   40% {
-    height: 21px; }
+    height: 5px; }
   60% {
-    height: 27px; }
+    height: 36px; }
   80% {
-    height: 1px; }
+    height: 20px; }
   100% {
-    height: 27px; } }
+    height: 20px; } }
 
 @keyframes pumbSound3 {
   20% { }
   40% {
-    height: 40px; }
+    height: 31px; }
   60% {
-    height: 36px; }
+    height: 50px; }
   80% {
-    height: 21px; }
+    height: 4px; }
   100% {
-    height: 18px; } }
+    height: 50px; } }
 
 @-webkit-keyframes pumbSound4 {
   20% { }
   40% {
-    height: 48px; }
+    height: 44px; }
   60% {
-    height: 4px; }
+    height: 40px; }
   80% {
-    height: 11px; }
+    height: 42px; }
   100% {
-    height: 49px; } }
+    height: 37px; } }
 
 @-moz-keyframes pumbSound4 {
   20% { }
   40% {
-    height: 44px; }
+    height: 30px; }
   60% {
-    height: 3px; }
+    height: 13px; }
   80% {
-    height: 3px; }
+    height: 22px; }
   100% {
-    height: 22px; } }
+    height: 7px; } }
 
 @-o-keyframes pumbSound4 {
   20% { }
   40% {
-    height: 36px; }
+    height: 30px; }
   60% {
-    height: 37px; }
-  80% {
     height: 11px; }
+  80% {
+    height: 12px; }
   100% {
-    height: 45px; } }
+    height: 42px; } }
 
 @keyframes pumbSound4 {
   20% { }
   40% {
-    height: 3px; }
+    height: 29px; }
   60% {
-    height: 49px; }
+    height: 1px; }
   80% {
-    height: 36px; }
+    height: 22px; }
   100% {
-    height: 33px; } }
+    height: 32px; } }
 
 @-webkit-keyframes pumbSound5 {
   20% { }
   40% {
-    height: 14px; }
+    height: 3px; }
   60% {
-    height: 36px; }
+    height: 50px; }
   80% {
-    height: 13px; }
+    height: 7px; }
   100% {
-    height: 6px; } }
+    height: 36px; } }
 
 @-moz-keyframes pumbSound5 {
   20% { }
   40% {
-    height: 50px; }
+    height: 49px; }
   60% {
-    height: 41px; }
+    height: 33px; }
   80% {
-    height: 18px; }
+    height: 46px; }
   100% {
-    height: 30px; } }
+    height: 39px; } }
 
 @-o-keyframes pumbSound5 {
   20% { }
   40% {
-    height: 50px; }
+    height: 15px; }
   60% {
-    height: 21px; }
+    height: 10px; }
   80% {
-    height: 5px; }
+    height: 29px; }
   100% {
-    height: 49px; } }
+    height: 22px; } }
 
 @keyframes pumbSound5 {
   20% { }
   40% {
-    height: 30px; }
+    height: 26px; }
   60% {
-    height: 10px; }
+    height: 33px; }
   80% {
-    height: 31px; }
+    height: 9px; }
   100% {
-    height: 49px; } }
+    height: 45px; } }
 
 @-webkit-keyframes pumbSound6 {
   20% { }
   40% {
-    height: 44px; }
+    height: 24px; }
   60% {
-    height: 13px; }
+    height: 24px; }
   80% {
-    height: 8px; }
+    height: 50px; }
   100% {
-    height: 34px; } }
+    height: 24px; } }
 
 @-moz-keyframes pumbSound6 {
   20% { }
   40% {
-    height: 23px; }
+    height: 36px; }
   60% {
-    height: 31px; }
+    height: 26px; }
   80% {
-    height: 45px; }
+    height: 11px; }
   100% {
-    height: 6px; } }
+    height: 30px; } }
 
 @-o-keyframes pumbSound6 {
   20% { }
   40% {
-    height: 8px; }
+    height: 44px; }
   60% {
-    height: 3px; }
+    height: 39px; }
   80% {
-    height: 7px; }
+    height: 4px; }
   100% {
-    height: 8px; } }
+    height: 31px; } }
 
 @keyframes pumbSound6 {
   20% { }
   40% {
-    height: 22px; }
+    height: 41px; }
   60% {
-    height: 12px; }
+    height: 18px; }
   80% {
-    height: 6px; }
+    height: 28px; }
   100% {
-    height: 33px; } }
+    height: 36px; } }
 
 @-webkit-keyframes pumbSound7 {
   20% { }
   40% {
-    height: 38px; }
+    height: 30px; }
   60% {
-    height: 1px; }
+    height: 26px; }
   80% {
-    height: 40px; }
+    height: 38px; }
   100% {
-    height: 13px; } }
+    height: 32px; } }
 
 @-moz-keyframes pumbSound7 {
   20% { }
   40% {
-    height: 42px; }
+    height: 13px; }
   60% {
-    height: 17px; }
+    height: 9px; }
   80% {
-    height: 23px; }
+    height: 26px; }
   100% {
-    height: 28px; } }
+    height: 48px; } }
 
 @-o-keyframes pumbSound7 {
   20% { }
   40% {
-    height: 12px; }
+    height: 9px; }
   60% {
-    height: 36px; }
+    height: 24px; }
   80% {
-    height: 35px; }
+    height: 40px; }
   100% {
-    height: 18px; } }
+    height: 9px; } }
 
 @keyframes pumbSound7 {
   20% { }
   40% {
-    height: 10px; }
+    height: 46px; }
   60% {
-    height: 34px; }
+    height: 18px; }
   80% {
-    height: 21px; }
+    height: 27px; }
   100% {
-    height: 38px; } }
+    height: 26px; } }
 
 @-webkit-keyframes pumbSound8 {
   20% { }
   40% {
-    height: 8px; }
-  60% {
     height: 23px; }
+  60% {
+    height: 38px; }
   80% {
-    height: 20px; }
+    height: 40px; }
   100% {
-    height: 48px; } }
+    height: 25px; } }
 
 @-moz-keyframes pumbSound8 {
   20% { }
   40% {
-    height: 15px; }
+    height: 10px; }
   60% {
-    height: 22px; }
+    height: 33px; }
   80% {
-    height: 1px; }
+    height: 4px; }
   100% {
-    height: 18px; } }
+    height: 7px; } }
 
 @-o-keyframes pumbSound8 {
   20% { }
   40% {
-    height: 36px; }
+    height: 37px; }
   60% {
-    height: 29px; }
+    height: 50px; }
   80% {
-    height: 11px; }
+    height: 49px; }
   100% {
-    height: 6px; } }
+    height: 50px; } }
 
 @keyframes pumbSound8 {
   20% { }
   40% {
-    height: 44px; }
+    height: 27px; }
   60% {
-    height: 2px; }
+    height: 46px; }
   80% {
-    height: 2px; }
+    height: 6px; }
   100% {
-    height: 4px; } }
+    height: 41px; } }
 
 @-webkit-keyframes pumbSound9 {
   20% { }
   40% {
-    height: 46px; }
+    height: 36px; }
   60% {
-    height: 34px; }
+    height: 10px; }
   80% {
-    height: 19px; }
+    height: 2px; }
   100% {
-    height: 9px; } }
+    height: 46px; } }
 
 @-moz-keyframes pumbSound9 {
   20% { }
   40% {
-    height: 43px; }
+    height: 34px; }
   60% {
-    height: 30px; }
+    height: 50px; }
   80% {
-    height: 10px; }
+    height: 2px; }
   100% {
-    height: 8px; } }
+    height: 6px; } }
 
 @-o-keyframes pumbSound9 {
   20% { }
   40% {
-    height: 48px; }
+    height: 41px; }
   60% {
-    height: 30px; }
+    height: 7px; }
   80% {
-    height: 40px; }
+    height: 11px; }
   100% {
-    height: 5px; } }
+    height: 20px; } }
 
 @keyframes pumbSound9 {
   20% { }
   40% {
-    height: 44px; }
+    height: 3px; }
   60% {
-    height: 2px; }
+    height: 12px; }
   80% {
-    height: 22px; }
+    height: 43px; }
   100% {
-    height: 29px; } }
+    height: 47px; } }
 
 html,
 body {

@@ -26,7 +26,8 @@ gulp.task('scripts', function() {
                 .pipe(rename('script.min.js'))
                 .pipe(uglify())
                 .pipe(sourcemaps.write('/'))
-                .pipe(gulp.dest('dist/js'));
+                .pipe(gulp.dest('dist/js'))
+                .pipe(gulp.dest('docs/assets/js'));
 })
 
 gulp.task('styles', function(){
@@ -38,5 +39,6 @@ gulp.task('styles', function(){
                 .pipe(rename('styles.min.css'))
                 .pipe(minifyCss())
                 .pipe(sourcemaps.write('/'))
-                .pipe(gulp.dest('dist/css'));
+                .pipe(gulp.dest('dist/css'))
+                .pipe(gulp.dest('docs/assets/css'));
 });
