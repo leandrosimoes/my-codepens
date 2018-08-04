@@ -1,11 +1,105 @@
 
 
-#simple-loading {
-  width: 71px;
-  margin: 0 auto;
+#radar {
+  width: 70px;
+  height: 70px;
   position: relative;
   top: 50%;
-  transform: translateY(-50%); }
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #radar .wave {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    opacity: 0;
+    animation-name: "radar";
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.6, 0.13, 0.79, 0.49);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #radar .wave.wave1 {
+      animation-delay: 0s; }
+    #radar .wave.wave2 {
+      animation-delay: 0.2s; }
+    #radar .wave.wave3 {
+      animation-delay: 0.4s; }
+
+@-webkit-keyframes radar {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  50% {
+    opacity: 1;
+    width: 10px;
+    height: 10px; }
+  100% {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    border-width: 1; } }
+
+@-moz-keyframes radar {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  50% {
+    opacity: 1;
+    width: 10px;
+    height: 10px; }
+  100% {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    border-width: 1; } }
+
+@-o-keyframes radar {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  50% {
+    opacity: 1;
+    width: 10px;
+    height: 10px; }
+  100% {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    border-width: 1; } }
+
+@keyframes radar {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  50% {
+    opacity: 1;
+    width: 10px;
+    height: 10px; }
+  100% {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    border-width: 1; } }
+
+#simple-loading {
+  width: 71px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
   #simple-loading .circle {
     width: 15px;
     height: 15px;
@@ -120,10 +214,10 @@
 #levels {
   width: 100px;
   height: 50px;
-  margin: 0 auto;
   position: relative;
   top: 50%;
-  transform: translateY(-50%); }
+  left: 50%;
+  transform: translate(-50%, -50%); }
   #levels .level {
     width: 3px;
     height: 50px;
@@ -138,428 +232,428 @@
       background: #FFF;
       width: 3px; }
     #levels .level.level1:after {
-      height: 3px;
-      animation: pumbSound1 527ms linear infinite alternate; }
+      height: 18px;
+      animation: pumbSound1 482ms linear infinite alternate; }
     #levels .level.level2:after {
-      height: 4px;
-      animation: pumbSound2 402ms linear infinite alternate; }
+      height: 13px;
+      animation: pumbSound2 461ms linear infinite alternate; }
     #levels .level.level3:after {
-      height: 6px;
-      animation: pumbSound3 637ms linear infinite alternate; }
+      height: 1px;
+      animation: pumbSound3 761ms linear infinite alternate; }
     #levels .level.level4:after {
-      height: 25px;
-      animation: pumbSound4 792ms linear infinite alternate; }
+      height: 29px;
+      animation: pumbSound4 443ms linear infinite alternate; }
     #levels .level.level5:after {
-      height: 7px;
-      animation: pumbSound5 650ms linear infinite alternate; }
+      height: 29px;
+      animation: pumbSound5 581ms linear infinite alternate; }
     #levels .level.level6:after {
-      height: 15px;
-      animation: pumbSound6 444ms linear infinite alternate; }
+      height: 13px;
+      animation: pumbSound6 773ms linear infinite alternate; }
     #levels .level.level7:after {
       height: 3px;
-      animation: pumbSound7 557ms linear infinite alternate; }
+      animation: pumbSound7 627ms linear infinite alternate; }
     #levels .level.level8:after {
-      height: 25px;
-      animation: pumbSound8 741ms linear infinite alternate; }
+      height: 32px;
+      animation: pumbSound8 345ms linear infinite alternate; }
     #levels .level.level9:after {
-      height: 10px;
-      animation: pumbSound9 389ms linear infinite alternate; }
+      height: 33px;
+      animation: pumbSound9 377ms linear infinite alternate; }
 
 @-webkit-keyframes pumbSound1 {
   20% { }
   40% {
-    height: 6px; }
+    height: 36px; }
   60% {
-    height: 49px; }
+    height: 41px; }
   80% {
-    height: 46px; }
+    height: 6px; }
   100% {
-    height: 46px; } }
+    height: 35px; } }
 
 @-moz-keyframes pumbSound1 {
   20% { }
   40% {
-    height: 12px; }
+    height: 49px; }
   60% {
-    height: 50px; }
+    height: 29px; }
   80% {
-    height: 2px; }
+    height: 21px; }
   100% {
-    height: 49px; } }
+    height: 29px; } }
 
 @-o-keyframes pumbSound1 {
   20% { }
   40% {
-    height: 11px; }
-  60% {
     height: 37px; }
+  60% {
+    height: 5px; }
   80% {
-    height: 28px; }
+    height: 40px; }
   100% {
-    height: 36px; } }
+    height: 40px; } }
 
 @keyframes pumbSound1 {
   20% { }
   40% {
-    height: 48px; }
+    height: 36px; }
   60% {
-    height: 21px; }
+    height: 26px; }
   80% {
-    height: 47px; }
+    height: 10px; }
   100% {
-    height: 43px; } }
+    height: 4px; } }
 
 @-webkit-keyframes pumbSound2 {
   20% { }
   40% {
-    height: 47px; }
+    height: 25px; }
   60% {
-    height: 2px; }
+    height: 10px; }
   80% {
-    height: 36px; }
+    height: 6px; }
   100% {
-    height: 41px; } }
+    height: 18px; } }
 
 @-moz-keyframes pumbSound2 {
   20% { }
   40% {
-    height: 7px; }
+    height: 24px; }
   60% {
-    height: 16px; }
+    height: 36px; }
   80% {
-    height: 49px; }
+    height: 41px; }
   100% {
-    height: 38px; } }
+    height: 5px; } }
 
 @-o-keyframes pumbSound2 {
   20% { }
   40% {
-    height: 50px; }
+    height: 27px; }
   60% {
-    height: 29px; }
+    height: 31px; }
   80% {
-    height: 44px; }
+    height: 16px; }
   100% {
-    height: 34px; } }
+    height: 41px; } }
 
 @keyframes pumbSound2 {
   20% { }
   40% {
-    height: 4px; }
+    height: 49px; }
   60% {
-    height: 46px; }
+    height: 20px; }
   80% {
-    height: 45px; }
+    height: 49px; }
   100% {
-    height: 50px; } }
+    height: 5px; } }
 
 @-webkit-keyframes pumbSound3 {
   20% { }
   40% {
-    height: 44px; }
+    height: 29px; }
   60% {
-    height: 7px; }
+    height: 46px; }
   80% {
-    height: 1px; }
+    height: 8px; }
   100% {
-    height: 15px; } }
+    height: 16px; } }
 
 @-moz-keyframes pumbSound3 {
   20% { }
   40% {
-    height: 30px; }
+    height: 28px; }
   60% {
-    height: 38px; }
+    height: 29px; }
   80% {
-    height: 27px; }
+    height: 46px; }
   100% {
-    height: 28px; } }
+    height: 35px; } }
 
 @-o-keyframes pumbSound3 {
   20% { }
   40% {
-    height: 32px; }
+    height: 35px; }
   60% {
     height: 14px; }
   80% {
-    height: 38px; }
+    height: 21px; }
   100% {
-    height: 40px; } }
+    height: 47px; } }
 
 @keyframes pumbSound3 {
   20% { }
   40% {
-    height: 12px; }
+    height: 49px; }
   60% {
-    height: 4px; }
-  80% {
     height: 29px; }
+  80% {
+    height: 12px; }
   100% {
-    height: 46px; } }
+    height: 49px; } }
 
 @-webkit-keyframes pumbSound4 {
   20% { }
   40% {
-    height: 44px; }
+    height: 24px; }
   60% {
-    height: 37px; }
+    height: 1px; }
   80% {
-    height: 27px; }
+    height: 5px; }
   100% {
-    height: 48px; } }
+    height: 4px; } }
 
 @-moz-keyframes pumbSound4 {
   20% { }
   40% {
-    height: 33px; }
+    height: 13px; }
   60% {
-    height: 36px; }
+    height: 14px; }
   80% {
-    height: 2px; }
+    height: 30px; }
   100% {
-    height: 44px; } }
+    height: 47px; } }
 
 @-o-keyframes pumbSound4 {
   20% { }
   40% {
-    height: 17px; }
+    height: 43px; }
   60% {
-    height: 6px; }
+    height: 38px; }
   80% {
-    height: 6px; }
+    height: 16px; }
   100% {
-    height: 24px; } }
+    height: 7px; } }
 
 @keyframes pumbSound4 {
   20% { }
   40% {
-    height: 35px; }
+    height: 14px; }
   60% {
-    height: 16px; }
+    height: 28px; }
   80% {
-    height: 12px; }
+    height: 24px; }
   100% {
-    height: 42px; } }
+    height: 27px; } }
 
 @-webkit-keyframes pumbSound5 {
   20% { }
   40% {
-    height: 50px; }
+    height: 12px; }
   60% {
-    height: 18px; }
+    height: 7px; }
   80% {
-    height: 26px; }
+    height: 17px; }
   100% {
-    height: 32px; } }
+    height: 5px; } }
 
 @-moz-keyframes pumbSound5 {
   20% { }
   40% {
-    height: 30px; }
+    height: 50px; }
   60% {
-    height: 21px; }
+    height: 4px; }
   80% {
-    height: 41px; }
+    height: 44px; }
   100% {
-    height: 15px; } }
+    height: 48px; } }
 
 @-o-keyframes pumbSound5 {
   20% { }
   40% {
-    height: 31px; }
+    height: 21px; }
   60% {
-    height: 17px; }
+    height: 12px; }
   80% {
-    height: 17px; }
+    height: 13px; }
   100% {
-    height: 34px; } }
+    height: 24px; } }
 
 @keyframes pumbSound5 {
   20% { }
   40% {
-    height: 28px; }
+    height: 30px; }
   60% {
-    height: 29px; }
+    height: 17px; }
   80% {
-    height: 8px; }
+    height: 1px; }
   100% {
-    height: 33px; } }
+    height: 18px; } }
 
 @-webkit-keyframes pumbSound6 {
   20% { }
   40% {
-    height: 15px; }
+    height: 35px; }
   60% {
-    height: 3px; }
+    height: 11px; }
   80% {
-    height: 7px; }
+    height: 32px; }
   100% {
-    height: 30px; } }
+    height: 5px; } }
 
 @-moz-keyframes pumbSound6 {
   20% { }
   40% {
-    height: 31px; }
+    height: 6px; }
   60% {
-    height: 8px; }
+    height: 36px; }
   80% {
-    height: 21px; }
+    height: 20px; }
   100% {
-    height: 25px; } }
+    height: 1px; } }
 
 @-o-keyframes pumbSound6 {
   20% { }
   40% {
-    height: 9px; }
+    height: 41px; }
   60% {
-    height: 23px; }
+    height: 16px; }
   80% {
-    height: 10px; }
+    height: 42px; }
   100% {
-    height: 12px; } }
+    height: 6px; } }
 
 @keyframes pumbSound6 {
   20% { }
   40% {
-    height: 34px; }
+    height: 49px; }
   60% {
-    height: 7px; }
+    height: 13px; }
   80% {
-    height: 33px; }
+    height: 20px; }
   100% {
-    height: 6px; } }
+    height: 8px; } }
 
 @-webkit-keyframes pumbSound7 {
   20% { }
   40% {
-    height: 27px; }
+    height: 6px; }
   60% {
-    height: 25px; }
+    height: 42px; }
   80% {
-    height: 1px; }
+    height: 35px; }
   100% {
-    height: 24px; } }
+    height: 43px; } }
 
 @-moz-keyframes pumbSound7 {
   20% { }
   40% {
-    height: 34px; }
+    height: 25px; }
   60% {
-    height: 36px; }
+    height: 18px; }
   80% {
-    height: 38px; }
+    height: 31px; }
   100% {
-    height: 35px; } }
+    height: 20px; } }
 
 @-o-keyframes pumbSound7 {
   20% { }
   40% {
-    height: 28px; }
+    height: 15px; }
   60% {
-    height: 22px; }
-  80% {
     height: 41px; }
+  80% {
+    height: 10px; }
   100% {
-    height: 10px; } }
+    height: 18px; } }
 
 @keyframes pumbSound7 {
   20% { }
   40% {
-    height: 18px; }
+    height: 43px; }
   60% {
-    height: 49px; }
+    height: 24px; }
   80% {
-    height: 12px; }
+    height: 42px; }
   100% {
-    height: 4px; } }
+    height: 31px; } }
 
 @-webkit-keyframes pumbSound8 {
   20% { }
   40% {
-    height: 14px; }
+    height: 35px; }
   60% {
-    height: 4px; }
+    height: 18px; }
   80% {
-    height: 17px; }
+    height: 18px; }
   100% {
-    height: 12px; } }
+    height: 44px; } }
 
 @-moz-keyframes pumbSound8 {
   20% { }
   40% {
-    height: 5px; }
+    height: 4px; }
   60% {
-    height: 16px; }
+    height: 4px; }
   80% {
-    height: 39px; }
+    height: 26px; }
   100% {
-    height: 17px; } }
+    height: 7px; } }
 
 @-o-keyframes pumbSound8 {
   20% { }
   40% {
-    height: 28px; }
+    height: 1px; }
   60% {
-    height: 40px; }
+    height: 11px; }
   80% {
-    height: 19px; }
+    height: 24px; }
   100% {
-    height: 6px; } }
+    height: 2px; } }
 
 @keyframes pumbSound8 {
   20% { }
   40% {
-    height: 17px; }
+    height: 27px; }
   60% {
-    height: 28px; }
+    height: 46px; }
   80% {
-    height: 11px; }
+    height: 7px; }
   100% {
-    height: 48px; } }
+    height: 28px; } }
 
 @-webkit-keyframes pumbSound9 {
   20% { }
   40% {
-    height: 31px; }
+    height: 37px; }
   60% {
-    height: 30px; }
+    height: 7px; }
   80% {
-    height: 45px; }
+    height: 19px; }
   100% {
-    height: 3px; } }
+    height: 26px; } }
 
 @-moz-keyframes pumbSound9 {
   20% { }
   40% {
-    height: 14px; }
+    height: 23px; }
   60% {
-    height: 14px; }
+    height: 7px; }
   80% {
-    height: 9px; }
+    height: 48px; }
   100% {
-    height: 12px; } }
+    height: 46px; } }
 
 @-o-keyframes pumbSound9 {
   20% { }
   40% {
-    height: 27px; }
+    height: 23px; }
   60% {
-    height: 31px; }
+    height: 12px; }
   80% {
-    height: 7px; }
+    height: 15px; }
   100% {
-    height: 9px; } }
+    height: 22px; } }
 
 @keyframes pumbSound9 {
   20% { }
   40% {
-    height: 21px; }
+    height: 31px; }
   60% {
-    height: 26px; }
+    height: 36px; }
   80% {
     height: 10px; }
   100% {
-    height: 48px; } }
+    height: 13px; } }
 
 html,
 body {
@@ -605,3 +699,9 @@ main {
     height: 100%;
     position: relative;
     background-color: #0076b9; }
+  main .article3 {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #da1f9b; }

@@ -6,10 +6,9 @@ $animation-name: 'pumbSound';
 #levels {
     width: 100px;
     height: 50px;
-    margin: 0 auto;
     position: relative;
     
-    @include verticalCenterAlign();
+    @include middleScreenAlign();
 
     .level {
         width: 3px;

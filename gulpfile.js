@@ -1,18 +1,18 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var minifyCss = require('gulp-minify-css');
-var babel = require('gulp-babel');
-var plumber = require('gulp-plumber');
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let sourcemaps = require('gulp-sourcemaps');
+let concat = require('gulp-concat');
+let rename = require('gulp-rename');
+let uglify = require('gulp-uglify');
+let minifyCss = require('gulp-minify-css');
+let babel = require('gulp-babel');
+let plumber = require('gulp-plumber');
 
-gulp.task('scripts', function() {
+gulp.task('scripts', () => {
     return gulp.src('src/js/**/*.es6.js')
                 .pipe(sourcemaps.init())
                 .pipe(plumber({
-                    errorHandler: function(error) {
+                    errorHandler: error => {
                         console.log(error.message);
                         this.emit('end');
                     }
@@ -30,7 +30,7 @@ gulp.task('scripts', function() {
                 .pipe(gulp.dest('docs/assets/js'));
 })
 
-gulp.task('styles', function(){
+gulp.task('styles', () => {
     return gulp.src('src/**/*.scss')
                 .pipe(sourcemaps.init())
                 .pipe(sass().on('error', sass.logError))
@@ -42,3 +42,10 @@ gulp.task('styles', function(){
                 .pipe(gulp.dest('dist/css'))
                 .pipe(gulp.dest('docs/assets/css'));
 });
+
+gulp.task('watch', () => {
+    let watcher = gulp.watch('src/**/*.scss', ['styles']);
+    watcher.on('change', function(event) {
+      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    });
+})

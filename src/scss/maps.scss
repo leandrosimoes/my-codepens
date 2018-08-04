@@ -6,4 +6,8 @@ $simple-loading-section-map: (
     backgroundColor: #0076b9
 );
 
-$map-list: $sound-equalizer-section-map, $simple-loading-section-map;
+$radar-loading-section-map: (
+    backgroundColor: #da1f9b
+);
+
+$map-list: $sound-equalizer-section-map, $simple-loading-section-map, $radar-loading-section-map;

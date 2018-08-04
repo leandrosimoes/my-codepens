@@ -4,10 +4,9 @@
   
   #simple-loading {
     width: 71px;
-    margin: 0 auto;
     position: relative;
 
-    @include verticalCenterAlign();
+    @include middleScreenAlign();
 
     .circle {
       width: 15px;
