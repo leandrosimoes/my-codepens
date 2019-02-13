@@ -19,3 +19,4 @@ See the pens in this repo working [here](https://lesimoes.com.br/my-codepens) to
 * [Pure CSS Animated Product Card](https://codepen.io/leandrosimoes/full/YdKLXO)
 * [Pure CSS Button Hover Glow Effect](https://codepen.io/leandrosimoes/full/VqZxaG)
 * [Pure CSS HTML5 Video Background](https://codepen.io/leandrosimoes/full/mabLEv)
+* [Pure CSS Team Page With Video Background](https://codepen.io/leandrosimoes/full/xMJMKy)
